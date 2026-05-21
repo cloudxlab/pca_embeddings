@@ -33,8 +33,6 @@ python3 pca_experiment_v2.py
 # Or the original smaller experiment (10 topics)
 python3 pca_experiment.py
 
-# Regenerate figures
-python3 generate_figures.py
 ```
 
 Embeddings are cached in `embeddings_cache.json` after the first run — subsequent runs are free.
@@ -47,24 +45,9 @@ Embeddings are cached in `embeddings_cache.json` after the first run — subsequ
 pca_embedding/
 ├── pca_experiment.py          # v1: 10 topics × 6 docs, baseline experiment
 ├── pca_experiment_v2.py       # v2: 20 topics × 15 docs, 5 hypotheses
-├── generate_figures.py        # Generates all 5 paper figures
-│
-├── figures/
-│   ├── fig1_map_vs_dims.png   # MAP vs PCA dimensionality
-│   ├── fig2_pca_vs_rp.png     # PCA vs Random Projection
-│   ├── fig3_simgap.png        # Similarity gap across dims
-│   ├── fig4_topic_diversity.png  # PCA gain vs # topics
-│   └── fig5_variance_map.png  # Variance explained vs MAP
-│
 ├── pca_results.csv            # v1 raw results
 ├── pca_results_v2.csv         # v2 raw results
-├── embeddings_cache.json      # Cached OpenAI embeddings
-│
-├── paper.md                   # Full paper (Markdown source)
-├── references.bib             # BibTeX references
 ├── paper.pdf                  # Compiled PDF
-├── paper.html                 # Standalone HTML (with figures embedded)
-└── paper.docx                 # Word document
 ```
 
 ---
