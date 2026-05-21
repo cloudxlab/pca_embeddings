@@ -1,7 +1,7 @@
 # Domain-Focused PCA on Text Embeddings Improves Semantic Retrieval
 
 > **Paper:** *Domain-Focused PCA on Text Embeddings Improves Semantic Retrieval: A Medical Domain Study*
-> [`paper.pdf`](paper.pdf) · [`paper.html`](paper.html)
+> [`paper.pdf`](paper.pdf)
 
 General-purpose text embeddings (e.g. OpenAI `text-embedding-3-small`) are trained on broad web data, encoding variation across all knowledge domains. When used for retrieval in a narrow domain, most dimensions carry cross-domain noise. This project shows that fitting PCA on a domain-specific document corpus and projecting embeddings into the top-k principal components consistently improves retrieval quality — with no fine-tuning required.
 
